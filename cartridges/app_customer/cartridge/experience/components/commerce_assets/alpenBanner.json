@@ -1,0 +1,34 @@
+{
+  "name": "Hero Banner (Alpenite)",
+  "description": "Hero Banner",
+  "group": "commerce_assets",
+  "attribute_definition_groups": [
+    {
+      "id": "alpenBannerMessage",
+      "name": "Hero Banner",
+      "description": "Hero Banner (Alpenite).",
+      "attribute_definitions": [
+        {
+          "id": "image",
+          "name": "Image",
+          "type": "image",
+          "required": true
+        },
+        {
+          "id": "alt",
+          "name": "Alt Text",
+          "description": "The image alt text shown by the component.",
+          "type": "string",
+          "required": false
+        },
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "string",
+          "required": false
+        }
+      ]
+    }
+  ],
+  "region_definitions": []
+}

@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col-12">
+        <div class="card" style="width: 18rem;">
+            <isif condition="${pdict.link != '#'}">
+                <a href="${pdict.link}">
+            </isif>
+            <picture>
+                <source srcset="${pdict.image.src.tablet}" media="(min-width: 768px)" />
+                <source srcset="${pdict.image.src.desktop}" media="(min-width: 1024px)" />
+                <img class="card-img-top" src="${pdict.image.src.mobile}" />
+            </picture>
+            <isif condition="${pdict.link != '#'}">
+                </a>
+            </isif>
+            <div class="card-body">
+                <isif condition="${pdict.link != '#'}">
+                    <a href="${pdict.link}">
+                </isif>
+                <h5 class="card-title">
+                    <isprint value="${pdict.title ? pdict.title : ''}" encoding="off" />
+                </h5>
+                <isif condition="${pdict.link != '#'}">
+                    </a>
+                </isif>
+                <p class="card-text">
+                    <isprint value="${pdict.paragraph ? pdict.paragraph : ''}" encoding="off" />
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

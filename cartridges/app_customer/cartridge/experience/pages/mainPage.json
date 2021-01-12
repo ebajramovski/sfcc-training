@@ -1,0 +1,44 @@
+{
+    "name":"Training Page",
+    "description":"A Storefront Page Type (Training)",
+    "region_definitions":[
+      {
+        "id":"hero",
+        "name":"Hero Region",
+        "max_components": 1,
+        "component_type_exclusions": [
+          { "type_id": "commerce_assets.categorytile" },
+          { "type_id": "commerce_assets.category" },
+          { "type_id": "commerce_layouts.carousel" }
+        ]
+      },
+      {
+        "id":"column_one",
+        "name":"Column A",
+        "component_type_exclusions": [
+          { "type_id": "commerce_assets.campaignBanner" }
+        ]
+      },
+      {
+        "id":"column_two",
+        "name":"Column B",
+        "component_type_exclusions": [
+          { "type_id": "commerce_assets.campaignBanner" }
+        ]
+      },
+      {
+        "id":"column_three",
+        "name":"Column C",
+        "component_type_exclusions": [
+          { "type_id": "commerce_assets.campaignBanner" }
+        ]
+      },
+      {
+        "id":"footer",
+        "name":"Footer",
+        "component_type_exclusions": [
+          { "type_id": "commerce_assets.campaignBanner" }
+        ]
+      }
+    ]
+}

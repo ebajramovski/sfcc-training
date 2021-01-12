@@ -1,0 +1,40 @@
+{
+  "name": "Card (Alpenite)",
+  "description": "Card",
+  "group": "commerce_assets",
+  "attribute_definition_groups": [
+    {
+      "id": "alpenCard",
+      "name": "Card",
+      "description": "Card (Alpenite).",
+      "attribute_definitions": [
+        {
+          "id": "image",
+          "name": "Image",
+          "type": "image",
+          "required": true
+        },
+        {
+          "id": "title",
+          "name": "Title",
+          "description": "Title",
+          "type": "string",
+          "required": true
+        },
+        {
+          "id": "paragraph",
+          "name": "Paragraph",
+          "type": "markup",
+          "required": false
+        },
+        {
+          "id": "link",
+          "name": "Link",
+          "type": "url",
+          "required": false
+        }
+      ]
+    }
+  ],
+  "region_definitions": []
+}

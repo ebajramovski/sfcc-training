@@ -1,0 +1,25 @@
+<isscript>
+    var assets = require('*/cartridge/scripts/assets.js');
+    assets.addCss('/css/hero.css');
+</isscript>
+
+<div class="hero">
+    <figure>
+        <picture>
+            <source srcset="${pdict.image.src.tablet}" media="(min-width: 768px)" />
+            <source srcset="${pdict.image.src.desktop}" media="(min-width: 1024px)" />
+            <a href="${pdict.link}"
+                aria-label="${Resource.msgf('pd.ITC.image.link', 'pageDesigner', null, pdict.alt ? pdict.alt : imageName)}">
+                <img class="hero__banner" src="${pdict.image.src.mobile}" alt="${pdict.alt ? pdict.alt : imageName}"
+                    title="${pdict.alt ? pdict.alt : imageName}" />
+            </a>
+        </picture>
+        <figcaption>
+            <div class="hero__content">
+                <h3 class="hero__title">
+                    <isprint value="${pdict.title ? pdict.title : ''}" encoding="off" />
+                </h3>
+            </div>
+        </figcaption>
+    </figure>
+</div>

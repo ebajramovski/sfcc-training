@@ -1,0 +1,23 @@
+
+
+.newsletter {
+  .banner {
+    max-width: 100%;
+  }
+
+  .form {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    .btn-primary {
+      background-color: #6d1ad9;
+      border: 1px solid transparent;
+
+      &:hover {
+        background-color: #ffff;
+        color: #6d1ad9;
+        border: 1px solid #6d1ad9;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Quote (Alpenite)",
+  "description": "Quote",
+  "group": "commerce_assets",
+  "attribute_definition_groups": [
+    {
+      "id": "alpenQuote",
+      "name": "Quote",
+      "description": "Quote",
+      "attribute_definitions": [
+        {
+          "id": "paragraph",
+          "name": "Paragraph",
+          "type": "markup",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "region_definitions": []
+}

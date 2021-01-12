@@ -1,0 +1,53 @@
+<isdecorate template="common/layout/page">
+    <isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addCss('/css/newsletter.css');
+        assets.addJs('/js/newsletter.js');
+    </isscript>
+    <div class="newsletter">
+        <img class="banner" src="https://via.placeholder.com/1920x400" alt="Newsletter Banner" />
+        <div class="container d-flex justify-content-center">
+            <form class="col-12 col-md-8 form" action="${pdict.actionUrl}" method="POST" name="NewsletterForm">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group ${pdict.newsletterForm.name.mandatory === true ? 'required' : ''}">
+                            <label>${Resource.msg(pdict.newsletterForm.name.label, 'newsletter', null)}</label>
+                            <input type="input" id="name" class="form-control" name="name" value=""
+                                <isprint value="${pdict.newsletterForm.name.attributes}"> >
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group ${pdict.newsletterForm.email.mandatory === true ? 'required' : ''}">
+                            <label>${Resource.msg(pdict.newsletterForm.email.label, 'newsletter', null)}</label>
+                            <input type="email" id="email" class="form-control" name="email" value=""
+                                <isprint value="${pdict.newsletterForm.email.attributes}"> >
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group ${pdict.newsletterForm.phone.mandatory === true ? 'required' : ''}">
+                            <label>${Resource.msg(pdict.newsletterForm.phone.label, 'newsletter', null)}</label>
+                            <input type="input" id="phone" class="form-control" name="phone" value=""
+                                <isprint value="${pdict.newsletterForm.phone.attributes}"> >
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group ${pdict.newsletterForm.category.mandatory === true ? 'required' : ''}">
+                            <label>${Resource.msg(pdict.newsletterForm.category.label, 'newsletter', null)}</label>
+                            <input type="text" id="category" class="form-control" name="category" value=""
+                                <isprint value="${pdict.newsletterForm.category.attributes}"> >
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <button type="submit" class="btn btn-block btn-primary">
+                            ${Resource.msg(pdict.newsletterForm.submit.label, 'newsletter', null)}
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</isdecorate>

@@ -1,0 +1,28 @@
+<iscontent type="text/html" charset="UTF-8" compact="true" />
+
+<div class="storepage" id="${pdict.page.ID}">
+
+    <isdecorate template="common/layout/pdStorePage">
+        <isscript>
+            var assets = require('*/cartridge/scripts/assets.js');
+            assets.addCss('/css/experience/mainPage.css');
+        </isscript>
+
+        <div class="main-page">
+            <div class="container-fluid">
+                <div class="row">
+                    <isprint value="${pdict.regions.hero.setClassName(" col-12").render()}" encoding="off" />
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <isprint value="${pdict.regions.column_one.setClassName(" col-4").render()}" encoding="off" />
+                    <isprint value="${pdict.regions.column_two.setClassName(" col-4").render()}" encoding="off" />
+                    <isprint value="${pdict.regions.column_three.setClassName(" col-4").render()}" encoding="off" />
+                    <isprint value="${pdict.regions.footer.setClassName(" col-12").render()}" encoding="off" />
+                </div>
+            </div>
+
+        </div>
+    </isdecorate>
+</div>

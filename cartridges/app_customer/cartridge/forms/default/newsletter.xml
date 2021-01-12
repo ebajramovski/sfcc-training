@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<form xmlns="http://www.demandware.com/xml/form/2008-04-19">
+	<field formid="name" label="label.input.name" type="string" mandatory="true"
+    	   max-length="20" missing-error="error.message.required" range-error="error.message.20orless"/>
+    <field formid="email" label="label.input.email" type="string" mandatory="true"
+           max-length="50" missing-error="address.email.missing" range-error="error.message.50orless"/>
+    <field formid="phone" label="label.input.phone" type="string" mandatory="false"
+           max-length="50"/>
+    <field formid="category" label="label.input.category" type="string" mandatory="false"
+           max-length="100"/>
+	<action formid="submit" label="label.input.subscribe" valid-form="true"/>
+</form>
